@@ -13,11 +13,11 @@ var UserName = prompt('Имя пользователя', ' ');
 var rightName = false;
 
 for (var i = 0; i < Names.length; i++){
-  if (Names[i] == UserName){
+    if (Names[i] == UserName){
     rightName = true;
-	alert(UserName + ', Вы успешно вошли');
-	break;
-}else {
-  alert('Ошибка');
-}
+  	alert(UserName + ', Вы успешно вошли');
+  	break;
+    }else {
+    alert('Ошибка');
+    }
 }
