@@ -9,15 +9,15 @@ for (var i = 0; i < 5; i++) {
 }
 
 var UserName = prompt('Имя пользователя', ' ');
+var rightUserName = false;
 
-var rightName = false;
-
-for (var i = 0; i < Names.length; i++){
-    if (Names[i] == UserName){
-    rightName = true;
-  	alert(UserName + ', Вы успешно вошли');
-  	break;
-    }else {
-    alert('Ошибка');
-    }
+for (var i = 0; i <=Names.length; i++){
+  if (Names[i] == UserName){
+	rightUserName = true;
+	alert(UserName + ', Вы успешно вошли');
+	break;
+	}
+}
+if (!rightUserName) {
+  alert( 'Неправильное имя!');
 }
